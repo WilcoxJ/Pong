@@ -3,7 +3,6 @@ import os
 from playsound import playsound
 import random
 
-
 #sound arrays
 gretaMad = ['wav/how_dare_you.wav', 'wav/stolen_dreams.wav', 'wav/your_failing_us.wav', 'wav/YEAHH.wav', 'wav/YEAHHHH.wav', 'wav/OK.wav']
 lilJonMad = ['wav/WHAT.wav', 'wav/WHATTT.wav', 'wav/WASHAPPENIN.wav', 'wav/future_gen.wav', 'wav/OK.wav']
@@ -43,7 +42,6 @@ ball.goto(0, 0)
 ball.dx = .5
 ball.dy = .5
 
-
 # score
 score_a = 0
 score_b = 0
@@ -52,9 +50,8 @@ sb.speed(0)
 sb.color("white")
 sb.penup()
 sb.hideturtle()
-sb.goto(0, 260)
+sb.goto(0, 250)
 sb.write("Lil Jon: {} Greta: {}".format(score_a, score_b), align="center", font=("Courier", 24, "normal"))
-
 
 # funcs
 def lPad_up():
