@@ -1,6 +1,9 @@
 # Pong Clone (Greta vs. Lil Jon)
 
-### Currently only runs on Windows machines (winsound lib)
+### External libs:
+```
+playsound || https://pypi.org/project/playsound/
+```
 
 ##### Lil Jon Controls: 
 Paddle Up = w  
