@@ -1,8 +1,8 @@
 import turtle
 import os
-#from playsound import playsound # I tried using playsound but couldn't figure out how to get it play asynchronously
+from playsound import playsound
 import random
-import winsound
+
 
 #sound arrays
 gretaMad = ['wav/how_dare_you.wav', 'wav/stolen_dreams.wav', 'wav/your_failing_us.wav', 'wav/YEAHH.wav', 'wav/YEAHHHH.wav', 'wav/OK.wav']
@@ -108,7 +108,7 @@ while True:
         score_a += 1
         sb.clear()
         sb.write("Lil Jon: {} Greta: {}".format(score_a, score_b), align="center", font=("Courier", 24, "normal"))
-        winsound.PlaySound(random.choice(gretaMad), winsound.SND_ASYNC | winsound.SND_ALIAS)
+        playsound(random.choice(gretaMad), False)
         if score_a == 5:
             winner = "Lil Jon"
             sb.clear()
@@ -117,9 +117,9 @@ while True:
             lj.shape("img/liljon3.gif")
             lj.shapesize(stretch_wid=1, stretch_len=1)
             lj.goto(0, 0)
-            sb.write("{} Wins!!".format(winner), align="center", font=("Courier", 24, "normal"))
+            sb.write("{} Wins!!".format(winner), align="center", font=("Courier", 36, "normal"))
             wn.update()
-            winsound.PlaySound("wav/TURNDOWNFORWHAT.wav", winsound.SND_ALIAS)
+            playsound("wav/TURNDOWNFORWHAT.wav")
             break
 
         #right Score
@@ -129,7 +129,7 @@ while True:
         score_b += 1
         sb.clear()
         sb.write("Lil Jon: {} Greta: {}".format(score_a, score_b), align="center", font=("Courier", 24, "normal"))
-        winsound.PlaySound(random.choice(lilJonMad), winsound.SND_ASYNC | winsound.SND_ALIAS)
+        playsound(random.choice(lilJonMad), False)
         if score_b == 5:
             winner = "Greta"
             sb.clear()
@@ -137,9 +137,9 @@ while True:
             greta = turtle.Turtle()
             greta.shape("img/greta.gif")
             greta.goto(0, 0)
-            sb.write("{} Wins!!".format(winner), align="center", font=("Courier", 24, "normal"))
+            sb.write("{} Wins!!".format(winner), align="center", font=("Courier", 36, "normal"))
             wn.update()
-            winsound.PlaySound("wav/evil.wav", winsound.SND_ALIAS)
+            playsound("wav/evil.wav")
             break
 
     #paddle ball collision
