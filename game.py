@@ -15,7 +15,7 @@ wn.bgcolor("black")
 wn.setup(width=800, height=600)
 wn.tracer(0)
 
-# paddle a
+# left paddle
 lPad = turtle.Turtle()
 lPad.speed(0)
 lPad.shape("square")
@@ -24,7 +24,7 @@ lPad.shapesize(stretch_wid=5, stretch_len=1)
 lPad.penup()
 lPad.goto(-350, 0)
 
-# paddle b
+# right paddle
 rPad = turtle.Turtle()
 rPad.speed(0)
 rPad.shape("square")
@@ -40,8 +40,8 @@ ball.shape("square")
 ball.color("green")
 ball.penup()
 ball.goto(0, 0)
-ball.dx = 1
-ball.dy = 1
+ball.dx = .5
+ball.dy = .5
 
 
 # score
