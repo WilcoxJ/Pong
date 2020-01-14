@@ -82,6 +82,7 @@ wn.onkeypress(lPad_down, "s")
 wn.onkeypress(rPad_up, "Up")
 wn.onkeypress(rPad_down, "Down")
 
+# Main game loop
 while True:
     wn.update()
 
