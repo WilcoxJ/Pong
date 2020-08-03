@@ -13,7 +13,7 @@ Paddle Down = s
 Paddle Up = &#8593;  
 Paddle Down = &#8595;  
 
-##### I'm slowly learning python and this is my dinky 1st project
+##### I'm slowly learning python and this is my 1st project
 
  ## Author
  * **Josh Wilcox**
